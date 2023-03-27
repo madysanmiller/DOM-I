@@ -41,60 +41,106 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('project wired!')
 
-const navL = document.querySelectorAll("nav a");
-const ctaH1 = document.querySelector(".cta-text h1");
-const ctaButton = document.querySelector(".cta-text button");
+const navLinks = document.querySelectorAll("nav a");
+const ctaH1 = document.querySelector(".cta-text h1")
+const ctaButton = document.querySelector(".cta-text button")
+const textContentHeaders = document.querySelectorAll(".text-content h4")
+const textContentParagraphs = document.querySelectorAll(".text-content p")
+const contactSectionHeader = document.querySelector(".contact h4")
+const contactSectionParagraphs = document.querySelectorAll(".contact p")
+const footerSection = document.querySelector("footer a")
+const logoImg = document.querySelector(".logo")
+const ctaImg = document.querySelector("#cta-img")
+const accentImg = document.querySelector(".middle-img")
 
-const topHeaders = document.querySelectorAll(".top-content .text-content h4");
-const bottomHeaders = document.querySelectorAll(".bottom-content .text-content h4");
+navLinks[0].textContent = siteContent["nav"]["nav-item-1"]
+navLinks[1].textContent = siteContent["nav"]["nav-item-2"]
+navLinks[2].textContent = siteContent["nav"]["nav-item-3"]
+navLinks[3].textContent = siteContent["nav"]["nav-item-4"]
+navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
+navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
 
-const topP = document.querySelectorAll(".top-content .text-content p");
-const bottomP = document.querySelectorAll(".bottom-content .text-content p");
+navLinks.forEach(link => link.classList.add("italic"))
 
-const contactHeader = document.querySelector(".contact h4");
-const contactText = document.querySelectorAll(".contact p");
+ctaH1.textContent = siteContent["cta"]["h1"]
+ctaButton.textContent = siteContent["cta"]["button"]
 
-const footerText = document.querySelector("footer a");
+textContentHeaders[0].textContent = siteContent["main-content"]["features-h4"]
+textContentHeaders[1].textContent = siteContent["main-content"]["about-h4"]
+textContentHeaders[2].textContent = siteContent["main-content"]["services-h4"]
+textContentHeaders[3].textContent = siteContent["main-content"]["product-h4"]
+textContentHeaders[4].textContent = siteContent["main-content"]["vision-h4"]
 
-const logo = document.querySelector("#logo-img");
-const ctaImg = document.querySelector("#cta-img");
-const accentImg = document.querySelector("#middle-img");
 
-//Text Content
+textContentParagraphs[0].textContent = siteContent["main-content"]["features-content"]
+textContentParagraphs[1].textContent = siteContent["main-content"]["about-content"]
+textContentParagraphs[2].textContent = siteContent["main-content"]["services-content"]
+textContentParagraphs[3].textContent = siteContent["main-content"]["product-content"]
+textContentParagraphs[4].textContent = siteContent["main-content"]["vision-content"]
 
-nav[0].textContent = "Services";
-nav[1].textContent = "Products";
-nav[1].textContent = "Product";
-nav[2].textContent = "Vision";
-nav[3].textContent = "Features";
-nav[4].textContent = "About";
-nav[5].textContent = "Contact";
+contactSectionHeader.textContent = siteContent["contact"]["contact-h4"]
+contactSectionParagraphs[0].textContent = siteContent["contact"]["address"]
+contactSectionParagraphs[1].textContent = siteContent["contact"]["phone"]
+contactSectionParagraphs[2].textContent = siteContent["contact"]["email"]
 
-header.textContent = "DOM Is Awesome";
-headerButton.textContent = "Get Started"
+footerSection.textContent = siteContent["footer"]["copyright"]
 
-topHeaders[0].textContent = "Features";
+footerSection.classList.add("bold")
 
-bottomP[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-bottomP[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+// const nav = document.querySelectorAll("nav a");
+// const ctaH1 = document.querySelector(".cta-text h1");
+// const ctaButton = document.querySelector(".cta-text button");
 
-contactHeader.textContent = "Contact";
+// const topHeaders = document.querySelectorAll(".top-content .text-content h4");
+// const bottomHeaders = document.querySelectorAll(".bottom-content .text-content h4");
 
-contactText[0].textContent = "123 Way 456 Street Somewhere, USA";
-contactText[1].textContent = "1 (888) 888-8888";
-contactText[2].textContent = "sales@greatidea.io";
+// const topP = document.querySelectorAll(".top-content .text-content p");
+// const bottomP = document.querySelectorAll(".bottom-content .text-content p");
 
-footerText.textContent = "Copyright Great Idea! 2021";
+// const contactHeader = document.querySelector(".contact h4");
+// const contactText = document.querySelectorAll(".contact p");
 
-//Class names
+// const footerText = document.querySelector("footer a");
 
-footerText.className = "bold";
-nav[0].className = "italic";
-nav[1].className = "italic";
-nav[2].className = "italic";
-nav[3].className = "italic";
-nav[4].className = "italic";
-nav[5].className = "italic";
+// const logo = document.querySelector("#logo-img");
+// const ctaImg = document.querySelector("#cta-img");
+// const accentImg = document.querySelector("#middle-img");
+
+// //Text Content
+
+// nav[0].textContent = "Services";
+// nav[1].textContent = "Product";
+// nav[1].textContent = "Product";
+// nav[2].textContent = "Vision";
+// nav[3].textContent = "Features";
+// nav[4].textContent = "About";
+// nav[5].textContent = "Contact";
+
+// header.textContent = "DOM Is Awesome";
+// headerButton.textContent = "Get Started"
+
+// topHeaders[0].textContent = "Features";
+
+// bottomP[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+// bottomP[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// contactHeader.textContent = "Contact";
+
+// contactText[0].textContent = "123 Way 456 Street Somewhere, USA";
+// contactText[1].textContent = "1 (888) 888-8888";
+// contactText[2].textContent = "sales@greatidea.io";
+
+// footerText.textContent = "Copyright Great Idea! 2021";
+
+// //Class names
+
+// footerText.className = "bold";
+// nav[0].className = "italic";
+// nav[1].className = "italic";
+// nav[2].className = "italic";
+// nav[3].className = "italic";
+// nav[4].className = "italic";
+// nav[5].className = "italic";
 
 
 
