@@ -40,3 +40,67 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const navL = document.querySelectorAll("nav a");
+const ctaH1 = document.querySelector(".cta-text h1");
+const ctaButton = document.querySelector(".cta-text button");
+
+const topHeaders = document.querySelectorAll(".top-content .text-content h4");
+const bottomHeaders = document.querySelectorAll(".bottom-content .text-content h4");
+
+const topP = document.querySelectorAll(".top-content .text-content p");
+const bottomP = document.querySelectorAll(".bottom-content .text-content p");
+
+const contactHeader = document.querySelector(".contact h4");
+const contactText = document.querySelectorAll(".contact p");
+
+const footerText = document.querySelector("footer a");
+
+const logo = document.querySelector("#logo-img");
+const ctaImg = document.querySelector("#cta-img");
+const accentImg = document.querySelector("#middle-img");
+
+//Text Content
+
+nav[0].textContent = "Services";
+nav[1].textContent = "Products";
+nav[1].textContent = "Product";
+nav[2].textContent = "Vision";
+nav[3].textContent = "Features";
+nav[4].textContent = "About";
+nav[5].textContent = "Contact";
+
+header.textContent = "DOM Is Awesome";
+headerButton.textContent = "Get Started"
+
+topHeaders[0].textContent = "Features";
+
+bottomP[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomP[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+contactHeader.textContent = "Contact";
+
+contactText[0].textContent = "123 Way 456 Street Somewhere, USA";
+contactText[1].textContent = "1 (888) 888-8888";
+contactText[2].textContent = "sales@greatidea.io";
+
+footerText.textContent = "Copyright Great Idea! 2021";
+
+//Class names
+
+footerText.className = "bold";
+nav[0].className = "italic";
+nav[1].className = "italic";
+nav[2].className = "italic";
+nav[3].className = "italic";
+nav[4].className = "italic";
+nav[5].className = "italic";
+
+
+
+
+// Images
+
+logoImg.src = "http://localhost:9000/img/logo.png";
+ctaImg.src = "http://localhost:9000/img/cta.png";
+accentImg.src = "http://localhost:9000/img/accent.png";
